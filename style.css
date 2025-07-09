@@ -4,12 +4,12 @@
 }
 @font-face {
   font-family: neu;
-  font-weight: 100%;
+  font-weight: 100;
   src: url(./NeueHaasDisplayLight.ttf);
 }
 @font-face {
   font-family: neu;
-  font-weight: 200%;
+  font-weight: 200;
   src: url(./NeueHaasDisplayRoman.ttf);
 }
 * {
@@ -166,7 +166,7 @@ nav {
   font-size: 9vw;
   display: inline-block;
 }
-#gola {
+.gola {
   height: 70px;
   width: 70px;
   border-radius: 50%;
@@ -207,17 +207,38 @@ nav {
   border-radius: 15px;
 }
 #bottom-part2 p {
-  font-weight: 200%;
+  font-weight: 200;
   margin-top: 2vw;
   font-size: 1vw;
 }
 #page2 #gooey {
-  height: 30vw;
-  width: 30vw;
+  height: 32vw;
+  width: 32vw;
   position: absolute;
   border-radius: 50%;
-  background-color: #fe320a;
+  background: linear-gradient(to top, #ff2d03, #ff5c0b);
   top: 58%;
   left: 25%;
   filter: blur(20px);
+  animation-name: gooey;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: ease-in-out;
+}
+@keyframes gooey {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
 }
