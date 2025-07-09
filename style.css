@@ -145,6 +145,7 @@ nav {
   width: 100%;
   padding: 8vw 0;
   background-color: #efeae3;
+  position: relative;
 }
 #moving-text {
   white-space: nowrap; /*For writing content in one line*/
@@ -189,6 +190,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 9;
 }
 #page2-bottom h1 {
   font-size: 4vw;
@@ -213,4 +216,8 @@ nav {
   width: 30vw;
   position: absolute;
   border-radius: 50%;
+  background-color: #fe320a;
+  top: 58%;
+  left: 25%;
+  filter: blur(20px);
 }
