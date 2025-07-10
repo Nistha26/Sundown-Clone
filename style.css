@@ -197,6 +197,7 @@ nav {
   font-size: 4vw;
   width: 60%;
   line-height: 4vw;
+  z-index: 13;
 }
 #bottom-part2 {
   width: 20%;
@@ -217,14 +218,14 @@ nav {
   position: absolute;
   border-radius: 50%;
   background: linear-gradient(to top, #ff2d03, #ff5c0b);
-  top: 58%;
+  top: 45%;
   left: 25%;
   filter: blur(20px);
   animation-name: gooey;
   animation-duration: 6s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: ease-in-out;
+  animation-direction: alternate-reverse;
 }
 @keyframes gooey {
   from {
