@@ -243,3 +243,23 @@ nav {
   width: 100%;
   background-color: #efeae3;
 }
+.elem {
+  height: 150px;
+  width: 100%;
+  border-top: 1px solid #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+.elem h2 {
+  font-size: 3vw;
+}
+.elem.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
