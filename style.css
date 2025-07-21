@@ -24,6 +24,11 @@ body {
   height: 100%;
   width: 100%;
 }
+#main {
+  background-color: #000;
+  position: relative;
+  z-index: 10;
+}
 #page1 {
   width: 100%;
   min-height: 100vh;
@@ -305,4 +310,40 @@ nav {
   display: none;
   background-size: cover;
   background-position: center;
+}
+#page4 {
+  height: 60vh;
+  width: 100%;
+  background-color: #efeae3;
+}
+#page5 {
+  height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+}
+#footer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  z-index: 9;
+  bottom: 0;
+  padding: 1vw 3vw;
+}
+#footer h1 {
+  font-size: 23vw;
+}
+#footer-div {
+  height: 20vh;
+  width: 100%;
+  background-color: red;
+}
+#footeer-bottom {
+  border-top: 1px solid #dadada;
+  height: 10vh;
+  width: 100%;
 }
