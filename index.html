@@ -7,6 +7,11 @@
     <link rel="Shortcut icon" href="ICON.png" type="image/png" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
     <link rel="stylesheet" href="style.css" />
@@ -167,11 +172,33 @@
           </div>
         </div>
       </div>
-      <div id="page4"></div>
+      <div id="page4">
+        <swiper-container
+          class="mySwiper"
+          slides-per-view="auto"
+          centered-slides="true"
+          space-between="30"
+        >
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide>
+          <swiper-slide>Slide 5</swiper-slide>
+          <swiper-slide>Slide 6</swiper-slide>
+          <swiper-slide>Slide 7</swiper-slide>
+        </swiper-container>
+      </div>
       <div id="page5"></div>
     </div>
     <div id="footer">
-      <div id="footer-div"></div>
+      <div id="footer-div">
+        <!--<div id="points">
+          <h4>Work</h4>
+          <h4>Studio</h4>
+          <h4>Contact</h4>
+        </div>
+        <div id="email"></div>-->
+      </div>
       <h1>Sundown</h1>
       <div id="footer-bottom"></div>
     </div>
@@ -183,12 +210,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
-      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
